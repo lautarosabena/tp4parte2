@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Logic</title>
+    <style>
+        #leftbox {
+            float:left; 
+            width:45%;
+            height: 100vh;
+        }
+        #middlebox{
+            float:left; 
+            background:rgb(0, 0, 0);
+            width:200px;
+            height: 550px;
+            text-align: center;
+        }
+        #ball {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            top: 200px;
+        }
+
+        #target {
+            position:absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 225px;
+            background: rgba(0, 0, 0, 0.0);
+            width: 32px;
+            height: 32px;
+            shape-outside: ellipse(50% 50%);
+            clip-path: ellipse(50% 50%);
+        }
+
+        #imgfan {
+            position:relative;
+            top: 555px;
+            width: 80px; 
+            height: 80px;  
+            margin-left: 10px;  
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="leftbox"></div>
+        <div id="middlebox">
+            <div id="target"></div>
+            <div ><img id="ball" src="./assets/pelota.png" alt="pelota"></div>
+            <div><img id="imgfan" src="./assets/fan.png" alt="fan"></div>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
